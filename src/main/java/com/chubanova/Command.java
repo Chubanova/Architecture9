@@ -1,4 +1,5 @@
 package com.chubanova;
 
-public class Command {
+public interface Command {
+    void execute();
 }

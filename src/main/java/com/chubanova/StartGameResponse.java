@@ -10,9 +10,9 @@ import java.util.UUID;
 public class StartGameResponse {
 
     @JsonProperty("battleId")
-    private UUID battleId;
+    private String battleId;
     public StartGameResponse(UUID battleId) {
-        this.battleId = battleId;
+        this.battleId = battleId.toString();
 
     }
 }

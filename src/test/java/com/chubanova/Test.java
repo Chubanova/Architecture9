@@ -67,7 +67,7 @@ public class Test {
                 .postForEntity("/battle", request, StartGameResponse.class);
         Assertions.assertThat(newGameResponse.getBody().getBattleId())
                 .as("should return correct battle id")
-                .hasNoNullFieldsOrProperties();
+                .isNotEmpty();
     }
 
 }
